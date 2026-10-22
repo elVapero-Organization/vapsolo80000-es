@@ -28,9 +28,30 @@
     <link rel="apple-touch-icon" href="../apple-touch-icon.png">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/sets.css">
+    <script src="../assets/js/age.js"></script>
     <script src="../assets/js/app.js" defer></script>
   </head>
   <body>
+    <div class="agegate" role="dialog" aria-modal="true" aria-labelledby="agegate-title"
+      aria-describedby="agegate-text" data-agegate>
+      <div class="agegate__box">
+        <img src="../assets/img/logo-88.webp" width="250" height="88" alt="VapSolo"
+          class="agegate__logo">
+        <span class="age__badge agegate__badge">18+</span>
+        <p class="agegate__title" id="agegate-title">¿Eres mayor de 18 años?</p>
+        <p class="agegate__text" id="agegate-text">
+          Esta web trata sobre un vaper con nicotina, una sustancia altamente adictiva. Solo pueden
+          entrar los mayores de edad.
+        </p>
+        <div class="agegate__act">
+          <button type="button" class="btn" data-age-yes>Sí, soy mayor de 18</button>
+          <a class="btn btn--ghost" href="https://www.google.com/" data-age-no>No, soy menor</a>
+        </div>
+        <p class="agegate__fine">
+          Recordaremos tu respuesta en este navegador para no volver a preguntarte.
+        </p>
+      </div>
+    </div>
     <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
       <defs>
         <linearGradient id="gv" gradientUnits="userSpaceOnUse" x1="3" y1="3" x2="21" y2="21">

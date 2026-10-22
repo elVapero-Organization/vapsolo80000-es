@@ -443,3 +443,18 @@ html:not(.js) .drawer__head,html:not(.js) .drawer__cta{display:none}
 
 .dock .btn{padding:0 10px;min-width:0;font-size:12.5px;letter-spacing:.04em}
 .dock .btn--ghost-dark{font-size:14px}
+
+/* ---------- age gate (18+) ---------- */
+.agegate{display:none;position:fixed;inset:0;z-index:200;align-items:center;justify-content:center;padding:16px;background:radial-gradient(800px 500px at 50% 0%,rgba(138,77,255,.35),rgba(138,77,255,0)),#0d0722;overflow-y:auto}
+html.age-pending{overflow:hidden}
+html.age-pending .agegate{display:flex}
+.agegate__box{width:min(100%,460px);margin:auto;padding:28px 24px 24px;border-radius:24px;background:var(--dark2);color:#f4f1ff;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.12)}
+.agegate__logo{display:block;height:44px;width:auto;margin:0 auto 18px}
+.agegate__badge{font-size:15px;padding:5px 12px;border-radius:10px;margin-bottom:14px}
+.agegate__title{margin:0 0 10px;font:800 clamp(24px,6vw,30px)/1.15 var(--f-head);letter-spacing:-.02em;color:#fff}
+.agegate__text{margin:0 0 20px;color:#d6d0f3;font-size:15.5px}
+.agegate__act{display:grid;gap:10px}
+.agegate__act .btn{width:100%}
+.agegate__act .btn--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.agegate__act .btn--ghost:hover{box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.agegate__fine{margin:16px 0 0;font-size:12.5px;color:#a8a1d3}
